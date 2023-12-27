@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #f7f7ff;
+  display: flex;
+  flex-direction: column; /* makes the content flow from top to bottom */
+  min-height: 100vh; /* instead of 100%, this ensures it's always at least the height of the viewport */
+}
+
+blockquote {
+  font-size: 1.5rem;
+}
+
+blockquote footer {
+  font-size: 1.2rem;
+}
+
+#list-of-favourite-quotes {
+  max-height: 200px;
+  overflow-y: auto; /* Allows scroll if the list is too long */
+}
+
+.content {
+  flex: 1 0 auto; /* this allows the content to expand and shrink as needed */
+  padding-bottom: 40px; /* This can be adjusted based on the size of your footer */
+}
+
+footer {
+  flex-shrink: 0; /* this prevents the footer from shrinking, which could cause it not to occupy all available vertical space */
+}
+
+/* You might want to add specific spacing, colors, etc., depending on your design preference. */
